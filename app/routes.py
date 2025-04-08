@@ -1,5 +1,6 @@
-
+from flask import render_template
 from app import app
+
 @app.route('/')
 def home():
-    return 'Hello AI Chatbot'
+    return render_template("chat.html")
